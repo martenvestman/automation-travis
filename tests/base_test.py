@@ -16,8 +16,10 @@ class BaseTest(TestCase):
     @classmethod
     def setUpClass(cls):
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'
+        """  
         with app.app_context():
             db.init_app(app)
+        """
 
     def setUp(self):
         # Make sure database exists
