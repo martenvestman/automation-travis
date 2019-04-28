@@ -4,8 +4,8 @@ from tests.unit.unit_base_test import UnitBaseTest
 
 class StoreTest(UnitBaseTest):
     def test_create_store(self):
-        store = StoreModel('test')
+        store = StoreModel('tests')
 
-        self.assertEqual(store.name, 'test',
+        self.assertEqual(store.name, 'tests',
                          "The name of the store after creation does not equal the constructor argument.")
 

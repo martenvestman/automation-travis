@@ -1,7 +1,7 @@
 """
 BaseTest
 
-This class should be the parent class to each non-unit test.
+This class should be the parent class to each non-unit tests.
 It allows for instantiation of the database dynamically
 and makes sure that it is a new, blank database each time.
 """
@@ -26,7 +26,7 @@ class BaseTest(TestCase):
         # Make sure database exists
         with app.app_context():
             db.create_all()
-        # Get a test client
+        # Get a tests client
         self.app = app.test_client
         self.app_context = app.app_context
 

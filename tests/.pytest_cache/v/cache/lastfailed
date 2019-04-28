@@ -1,0 +1,13 @@
+{
+  "base_test.py": true,
+  "integration/models/test_item.py": true,
+  "integration/models/test_store.py": true,
+  "integration/models/test_user.py": true,
+  "system/test_item.py": true,
+  "system/test_store.py": true,
+  "system/test_user.py": true,
+  "unit/models/test_item.py": true,
+  "unit/models/test_store.py": true,
+  "unit/models/test_user.py": true,
+  "unit/unit_base_test.py": true
+}

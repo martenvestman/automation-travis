@@ -4,20 +4,20 @@ from models.item import ItemModel
 
 class ItemTest(UnitBaseTest):
     def test_create_item(self):
-        item = ItemModel('test', 19.99, 1)
+        item = ItemModel('tests', 19.99, 1)
 
-        self.assertEqual(item.name, 'test',
+        self.assertEqual(item.name, 'tests',
                          "The name of the item after creation does not equal the constructor argument.")
         self.assertEqual(item.price, 19.99,
                          "The price of the item after creation does not equal the constructor argument.")
         self.assertEqual(item.store_id, 1,
-                         "The store id of the item after creation does not equeal the constructor argument.")
+                         "The store id of the item after creation does not equal the constructor argument.")
         self.assertIsNone(item.store)
 
     def test_item_json(self):
-        item = ItemModel('test', 19.99, 1)
+        item = ItemModel('tests', 19.99, 1)
         expected = {
-            'name': 'test',
+            'name': 'tests',
             'price': 19.99
         }
 
